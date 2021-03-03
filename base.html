@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "utf-8">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="static/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        
+      <div class="container">
+          <section>
+            <img src="static/imgs/bg.jpg" id="bg">
+            <img src="static/imgs/moon.png" id="moon">
+            <img src="static/imgs/mountain.png" id="mountain">
+            <img src="static/imgs/road.png" id="road">
+            <h2 id="text"><i>Portfolio</i></h2>
+          </section>
+          
+         
+          <svg viewBox="0 0 100 100" preserveAspectRatio="none" height="100" width="100%">
+            <polygon class="down-triangle" points="0,0 100,0 50,50" />
+          </svg>
+      </div>
+      <div class="about">
+          <div class="card">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <div class="content">
+                  <h2>Profile</h2>
+                  <h3>Aman Prakash Jha</h3>
+                  <div class="p">
+                    <ul style="list-style-type:none;">
+                      <li>
+                        <i class="fa fa-envelope fa-1x"><a href="mailto:ap2301@it.jgec.ac.in" style="color:#fff; text-decoration:none; padding-left: 10px;">ap2301@it.jgec.ac.in</a></i>
+                      </li>
+                      <li>
+                        <i class="fa fa-phone fa-1x">+91 7478426468</i>
+                      </li>
+                    </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let moon=document.getElementById("moon");
+        let mountain=document.getElementById("mountain");
+        let road=document.getElementById("road");
+        let text=document.getElementById("text");
+        window.addEventListener('scroll',function(){
+          var value = window.scrollY;
+
+          bg.style.top = value * 0.5 + 'px';
+          moon.style.left = -value * 0.5 + 'px';
+          mountain.style.top = -value * 0.20 + 'px';
+          road.style.top = value * 0.20 + 'px';
+          text.style.top = value * 0.5 + 'px';
+        })
+      </script>
+    </body>
+</html>
